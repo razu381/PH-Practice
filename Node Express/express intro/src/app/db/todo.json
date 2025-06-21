@@ -8,5 +8,10 @@
   { "id": "t5", "task": "Plan weekend getaway", "completed": false },
   { "id": "t6", "task": "Read 'Atomic habits' book", "completed": false },
   { "id": "t7", "task": "Read 'ELON MUSK BIOGRAPHY' book", "completed": false },
-  { "id": "t8", "task": "Read 'Grokking algorithm' book", "completed": false }
+  { "id": "t8", "task": "Read 'Grokking algorithm' book", "completed": false },
+  {
+    "id": "t1",
+    "task": "Buy battery for your weight machine",
+    "completed": false
+  }
 ]
