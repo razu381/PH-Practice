@@ -1,0 +1,14 @@
+{
+  "name": "html-css-js-starter",
+  "version": "1.0.0",
+  "description": "A modern HTML, CSS, and JS project with npm support.",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "npx serve public"
+  },
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "serve": "^14.2.0"
+  }
+}

@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap");
+body {
+  font-family: Arial, sans-serif;
+  /* Cyberpunk dark gradient background */
+  background: linear-gradient(135deg, #0f2027 0%, #2c5364 50%, #ff0080 100%);
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  color: #f8f8ff;
+}
+#app {
+  max-width: 400px;
+  margin: 100px auto;
+  background: linear-gradient(135deg, #43cea2 0%, #185a9d 100%);
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 4px 24px 0 #43cea299, 0 0 0 2px #185a9d;
+  text-align: center;
+  border: 2px solid #43cea2;
+}
+button {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 4px;
+  background: #0078d4;
+  color: #fff;
+  cursor: pointer;
+}
+button:hover {
+  background: #005fa3;
+}
+button#clickMe {
+  background: linear-gradient(90deg, #ff0080 0%, #7928ca 100%);
+  color: #00ffe7;
+  font-family: "Orbitron", Arial, sans-serif;
+  border: none;
+  border-radius: 4px;
+  padding: 0.5rem 1.5rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+  box-shadow: 0 0 4px #ff0080, 0 0 8px #00ffe7;
+  text-shadow: 0 0 2px #00ffe7, 0 0 4px #ff0080;
+  transition: box-shadow 0.2s, background 0.2s, color 0.2s;
+}
+button#clickMe:hover {
+  background: linear-gradient(90deg, #00ffe7 0%, #ff0080 100%);
+  color: #fff;
+  box-shadow: 0 0 8px #00ffe7, 0 0 16px #ff0080;
+}
+.cyber-btn {
+  background: linear-gradient(90deg, #ff0080 0%, #7928ca 100%);
+  color: #00ffe7;
+  font-family: "Orbitron", Arial, sans-serif;
+  border: none;
+  border-radius: 4px;
+  padding: 0.5rem 1.5rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+  margin: 0 0.5rem;
+  box-shadow: 0 0 4px #ff0080, 0 0 8px #00ffe7;
+  text-shadow: 0 0 2px #00ffe7, 0 0 4px #ff0080;
+  transition: box-shadow 0.2s, background 0.2s, color 0.2s;
+  cursor: pointer;
+}
+.cyber-btn:hover {
+  background: linear-gradient(90deg, #00ffe7 0%, #ff0080 100%);
+  color: #fff;
+  box-shadow: 0 0 8px #00ffe7, 0 0 16px #ff0080;
+}
+.cyber-btn-group {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin: 1rem 0;
+}
+.cyber-input {
+  background: rgba(20, 20, 40, 0.85);
+  border: 2px solid #ff0080;
+  color: #00ffe7;
+  font-family: "Orbitron", Arial, sans-serif;
+  font-size: 1.1rem;
+  border-radius: 4px;
+  padding: 0.5rem 1rem;
+  margin: 0.5rem 0.5rem 0.5rem 0;
+  outline: none;
+  box-shadow: 0 0 4px #ff0080;
+  transition: border 0.2s, box-shadow 0.2s;
+}
+.cyber-input:focus {
+  border: 2px solid #00ffe7;
+  box-shadow: 0 0 8px #00ffe7;
+}
+.cyber-result {
+  font-family: "Orbitron", Arial, sans-serif;
+  color: #00ffe7;
+  font-size: 1.3rem;
+  margin-top: 1rem;
+  text-shadow: 0 0 4px #00ffe7;
+  background: linear-gradient(90deg, #1a0033 0%, #2c5364 60%, #ff0080 100%);
+  border: 2px solid #ff0080;
+  border-radius: 8px;
+  box-shadow: 0 0 8px #ff0080, 0 0 16px #00ffe7;
+  padding: 1rem 0.5rem;
+  display: inline-block;
+  min-width: 160px;
+}

@@ -1,0 +1,52 @@
+<div style="font-family: sans-serif; padding: 10px;">
+  <h2>Most Common Higher Order Functions in JavaScript</h2>
+  <p>JavaScript provides several built-in higher order functions for working with arrays. These functions take other functions as arguments and are very useful for data transformation and iteration.</p>
+
+  <h3>1. <code>map()</code> – Transform Each Element</h3>
+  <p>Creates a new array by applying a function to every element of the original array.</p>
+  <pre style="background-color: #2c3e50; padding: 10px 20px;"><code style="color: white; white-space: pre-wrap; word-break: break-all;">
+const numbers = [1, 2, 3];
+const squares = numbers.map(n => n * n);
+console.log(squares); // [1, 4, 9]
+  </code></pre>
+
+  <h3>2. <code>filter()</code> – Select Elements</h3>
+  <p>Creates a new array with only the elements that pass a test function.</p>
+  <pre style="background-color: #2c3e50; padding: 10px 20px;"><code style="color: white; white-space: pre-wrap; word-break: break-all;">
+const numbers = [1, 2, 3, 4];
+const even = numbers.filter(n => n % 2 === 0);
+console.log(even); // [2, 4]
+  </code></pre>
+
+  <h3>3. <code>reduce()</code> – Accumulate a Value</h3>
+  <p>Reduces an array to a single value by applying a function to each element and an accumulator.</p>
+  <pre style="background-color: #2c3e50; padding: 10px 20px;"><code style="color: white; white-space: pre-wrap; word-break: break-all;">
+const numbers = [1, 2, 3, 4];
+const sum = numbers.reduce((acc, n) => acc + n, 0);
+console.log(sum); // 10
+  </code></pre>
+
+  <h3>4. <code>forEach()</code> – Run a Function for Each Element</h3>
+  <p>Executes a function for each array element (does not return a new array).</p>
+  <pre style="background-color: #2c3e50; padding: 10px 20px;"><code style="color: white; white-space: pre-wrap; word-break: break-all;">
+const fruits = ['apple', 'banana', 'cherry'];
+fruits.forEach(fruit => {
+  console.log(fruit);
+});
+// Output:
+// apple
+// banana
+// cherry
+  </code></pre>
+
+  <h3>5. <code>find()</code> – Find the First Match</h3>
+  <p>Returns the first element that matches a condition, or <code>undefined</code> if none found.</p>
+  <pre style="background-color: #2c3e50; padding: 10px 20px;"><code style="color: white; white-space: pre-wrap; word-break: break-all;">
+const users = [
+  { name: 'Alice', age: 25 },
+  { name: 'Bob', age: 30 }
+];
+const user = users.find(u => u.age > 26);
+console.log(user); // { name: 'Bob', age: 30 }
+  </code></pre>
+</div>

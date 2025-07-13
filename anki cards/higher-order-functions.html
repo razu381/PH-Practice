@@ -1,0 +1,75 @@
+<div style="font-family: sans-serif; padding: 10px">
+  <h2>Higher Order Functions in JavaScript</h2>
+  <p>
+    A <b>higher order function</b> is a function that does at least one of the
+    following:
+  </p>
+  <ul>
+    <li>Takes one or more functions as arguments</li>
+    <li>Returns a function as its result</li>
+  </ul>
+  <p>They are a key concept in JavaScript and functional programming.</p>
+
+  <h3>Example 1: Passing a Function as an Argument</h3>
+  <p>
+    Here, <code>map</code> is a higher order function because it takes another
+    function as an argument.
+  </p>
+  <pre
+    style="background-color: #2c3e50; padding: 10px 20px"
+  ><code style="color: white; white-space: pre-wrap; word-break: break-all;">
+const numbers = [1, 2, 3];
+const doubled = numbers.map(function(n) {
+  return n * 2;
+});
+console.log(doubled); // [2, 4, 6]
+  </code></pre>
+
+  <h3>Example 2: Returning a Function</h3>
+  <p>This function returns another function, making it higher order.</p>
+  <pre
+    style="background-color: #2c3e50; padding: 10px 20px"
+  ><code style="color: white; white-space: pre-wrap; word-break: break-all;">
+function greet(message) {
+  return function(name) {
+    return message + ', ' + name + '!';
+  };
+}
+const sayHello = greet('Hello');
+console.log(sayHello('Alice')); // Hello, Alice!
+  </code></pre>
+
+  <h3>Example 3: Custom Higher Order Function</h3>
+  <p>
+    This function takes another function and applies it to each element of an
+    array.
+  </p>
+  <pre
+    style="background-color: #2c3e50; padding: 10px 20px"
+  ><code style="color: white; white-space: pre-wrap; word-break: break-all;">
+function applyToEach(arr, fn) {
+  for (let i = 0; i < arr.length; i++) {
+    arr[i] = fn(arr[i]);
+  }
+  return arr;
+}
+console.log(applyToEach([1, 2, 3], x => x * 3)); // [3, 6, 9]
+  </code></pre>
+
+  <h3>Example 4: Using forEach (Built-in Higher Order Function)</h3>
+  <p>
+    <code>forEach</code> takes a function and runs it for every element in the
+    array.
+  </p>
+  <pre
+    style="background-color: #2c3e50; padding: 10px 20px"
+  ><code style="color: white; white-space: pre-wrap; word-break: break-all;">
+[1, 2, 3].forEach(function(item) {
+  console.log(item);
+});
+// Output:
+// 1
+// 2
+// 3
+  </code></pre>
+</div>
