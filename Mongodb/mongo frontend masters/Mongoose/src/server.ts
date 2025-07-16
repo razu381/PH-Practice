@@ -2,6 +2,7 @@ import { Server } from "http";
 import app from "./app";
 import mongoose, { model } from "mongoose";
 import { runPopulalte } from "./populate_and_complex_query_questions";
+import { runVirtualChallenges } from "./mongoose-challenges";
 
 let server: Server;
 const port = 3000;
@@ -13,28 +14,9 @@ async function main() {
     );
 
     // -----------------------------------------------------------------------
-    // let newUser = await User.create({
-    //   userName: "john!@#",
-    //   email: "sirazu512@gmail.com",
-    //   age: "26",
-    // });
 
-    // let newStudent = await Student.create({
-    //   name: "razu",
-    //   email: "sirazu342@gmail.com",
-
-    //   info: {
-    //     school: "BCM",
-    //     Roll: 3,
-    //     Parent: {
-    //       name: "Belal",
-    //       contact: "khalashi bari",
-    //     },
-    //     hobbies: ["farming", "gardening"],
-    //   },
-    // });
-
-    runPopulalte();
+    // runPopulalte();
+    runVirtualChallenges();
 
     // -----------------------------------------------------------------------
 
