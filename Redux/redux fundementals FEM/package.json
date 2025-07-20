@@ -1,0 +1,18 @@
+{
+  "name": "redux-playground",
+  "version": "1.0.0",
+  "description": "Redux Fundamentals Course by Steve Kinney",
+  "scripts": {
+    "start": "parcel index.html --open",
+    "build": "parcel build index.html",
+    "dev": "parcel index.html"
+  },
+  "dependencies": {
+    "@reduxjs/toolkit": "^2.0.1",
+    "redux": "^5.0.1"
+  },
+  "devDependencies": {
+    "parcel": "^2.11.0"
+  },
+  "browserslist": "> 0.5%, last 2 versions, not dead"
+}

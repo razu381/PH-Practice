@@ -1,3 +1,4 @@
+import "dotenv/config";
 import { Server } from "http";
 import app from "./app";
 import mongoose, { model } from "mongoose";
@@ -10,7 +11,7 @@ const port = 3000;
 async function main() {
   try {
     await mongoose.connect(
-      "mongodb+srv://razu381:Evanevan381@cluster0.ve9ya7v.mongodb.net/fem-test?retryWrites=true&w=majority&appName=Cluster0"
+      `mongodb+srv://razu381:${process.env.PASS}@cluster0.ve9ya7v.mongodb.net/fem-test?retryWrites=true&w=majority&appName=Cluster0`
     );
 
     // -----------------------------------------------------------------------

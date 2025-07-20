@@ -62,16 +62,20 @@ const productSchema = new mongoose.Schema({
 
 // Your indexes here:
 productSchema.index({
-  /* your index 1 */
+  sellerId: 1,
+  createdAt: -1
 });
 productSchema.index({
-  /* your index 2 */
+    category: 1,
+    raing: 1,
+    stock: 1,
 });
 productSchema.index({
-  /* your index 3 */
+  brand: 1,
+  price: 1
 });
 productSchema.index({
-  /* your index 4 */
+  tags: "text",
 });
 
 // Questions to think about:
