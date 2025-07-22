@@ -2,13 +2,17 @@ import { useState } from "react";
 import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
 import "./App.css";
-import CounterTest from "./test files/CounterTest";
-import UserForm from "./test files/UserForm";
+import { Button } from "./components/ui/button";
+import { Outlet } from "react-router";
 
 function App() {
   const [count, setCount] = useState(0);
 
-  return <UserForm />;
+  return (
+    <div>
+      <Outlet />
+    </div>
+  );
 }
 
 export default App;

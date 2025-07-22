@@ -1,38 +1,34 @@
 import React, { useReducer, useState } from "react";
 
 function UserForm() {
-  const infoReducer = (state, action) => {
-    switch (action.type) {
-      case "FIELD_UPDATE":
-        return {
-          ...state,
-          [action.payload.field]: action.payload.value,
-        };
-      default:
-        state;
+  let [userData, dispatch] = useReducer(
+    (state, action) => {
+      switch (action.type) {
+        case "ADD":
+          return action.payload;
+      }
+    },
+    {
+      name: "",
+      email: "",
+      password: "",
     }
-  };
-
-  let [userInfo, dispatch] = useReducer(infoReducer, {
-    name: "",
-    email: "",
-    password: "",
-  });
-
-  const handleChange = (e) => {
-    dispatch({
-      type: "FIELD_UPDATE",
-      payload: {
-        field: e.target.name,
-        value: e.target.value,
-      },
-    });
-    console.log(userInfo);
-  };
+  );
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log("Form submitted:", userInfo);
+    let name = e.target.name;
+    let email = e.target.email;
+    let password = e.target.password;
+
+    dispatch({
+      type: "ADD",
+      payload: {
+        name,
+        email,
+        username,
+      },
+    });
 
     // Reset form
   };
