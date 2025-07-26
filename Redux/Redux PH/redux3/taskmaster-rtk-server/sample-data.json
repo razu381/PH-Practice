@@ -1,0 +1,37 @@
+[
+  {
+    "title": "Complete project documentation",
+    "description": "Write comprehensive documentation for the new project including API endpoints, setup instructions, and usage examples",
+    "priority": "high",
+    "dueDate": "2025-07-30T23:59:59.000Z",
+    "isCompleted": false
+  },
+  {
+    "title": "Review code changes",
+    "description": "Review the pull request for the authentication module and provide feedback",
+    "priority": "medium",
+    "dueDate": "2025-07-26T17:00:00.000Z",
+    "isCompleted": false
+  },
+  {
+    "title": "Update dependencies",
+    "description": "Update all npm packages to their latest versions and test for compatibility",
+    "priority": "low",
+    "dueDate": "2025-08-05T12:00:00.000Z",
+    "isCompleted": false
+  },
+  {
+    "title": "Fix login bug",
+    "description": "Investigate and fix the issue where users cannot login with special characters in password",
+    "priority": "high",
+    "dueDate": "2025-07-25T16:00:00.000Z",
+    "isCompleted": true
+  },
+  {
+    "title": "Team meeting preparation",
+    "description": "Prepare agenda and presentation slides for the weekly team meeting",
+    "priority": "medium",
+    "dueDate": "2025-07-28T09:00:00.000Z",
+    "isCompleted": false
+  }
+]
